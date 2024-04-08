@@ -1,3 +1,4 @@
+
 # Aplicação de RAG para Responder Perguntas Médicas sobre Tratamento do Tabagismo
 
 <p align="center">
@@ -11,6 +12,10 @@
 - [Objetivo](#objetivo)
 
 - [Contexto](#contexto)
+
+- [Dados](#dados)
+
+- [RAG](#rag)
 
 - [Como Usar](#como-usar)
 
@@ -27,9 +32,29 @@ O objetivo principal deste projeto é fornecer aos médicos uma ferramenta que p
 
 ## Contexto
 O acesso rápido e preciso a informações específicas dentro de protocolos clínicos é crucial para apoiar médicos na tomada de decisões e no fornecimento de cuidados baseados em evidências aos pacientes. Este projeto foca em simplificar o acesso às informações contidas no "Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo" do INCA.
+A utilização do banco de dados vetorial ChromaDB desempenhou um papel fundamental na contextualização do modelo de prompt. O ChromaDB serviu como uma fonte de embeddings essenciais, facilitando a inferência do RAG (Retrieval Augmented Generation). Para esta etapa crucial, empregou-se o modelo disponibilizado em [Hugging Face Model Hub](https://huggingface.co/tgsc/sentence-transformer-ult5-pt-small), o qual foi integrado ao ChromaDB para gerar embeddings relevantes e representativos.
+
+Ao incorporar o ChromaDB com os embeddings gerados pelo modelo fornecido, conseguimos estabelecer uma base sólida para a inferência do RAG. Esses embeddings capturam nuances semânticas e relações contextuais, permitindo que o sistema responda de forma mais precisa e significativa às consultas médicas sobre o protocolo de tratamento do tabagismo.
+
+Essa abordagem detalhada de integração do ChromaDB com os embeddings do modelo não apenas enriquece a compreensão do contexto, mas também melhora significativamente a capacidade do sistema de responder de maneira eficaz e relevante às perguntas médicas específicas sobre o tratamento do tabagismo.
+
+
 
 ## Dados
 O projeto utiliza o **protocolo de tratamento do tabagismo disponibilizado pelo INCA**, acessível no seguinte [link:INCA](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). Este documento contém diretrizes clínicas detalhadas que servirão como base para o sistema responder às perguntas dos médicos.
+
+Um aspecto crucial na criação dos embeddings da base vetorial foi o processo de particionamento do documento em chunks de 500 palavras, com um overlap de 100 palavras. Esse método permitiu uma representação mais abrangente e detalhada do conteúdo do documento dentro do ChromaDB. Cada chunk foi processado individualmente, garantindo que nenhum detalhe fosse perdido durante a geração dos embeddings.
+
+Essa estratégia de particionamento e sobreposição desempenhou um papel vital na captura da riqueza semântica e contextual do documento original. Ao dividir o texto em chunks menores e sobrepor parte do conteúdo entre eles, conseguimos garantir uma continuidade e coesão na representação dos embeddings.
+
+Além disso, o tamanho dos chunks foi cuidadosamente escolhido para equilibrar a granularidade dos dados e a eficiência computacional. Chunks menores poderiam capturar detalhes mais finos, enquanto um overlap adequado garantia a coesão entre os embeddings gerados.
+
+Essa abordagem detalhada no processo de criação dos embeddings da base vetorial não apenas enriqueceu a representação do documento no ChromaDB, mas também contribuiu significativamente para a capacidade do sistema de inferir respostas relevantes e precisas às consultas médicas sobre o protocolo de tratamento do tabagismo. A inclusão dessa informação no processo de contextualização do modelo de prompt fortaleceu ainda mais a robustez e a eficácia do sistema no fornecimento de informações úteis e confiáveis aos profissionais de saúde.
+
+
+## RAG
+![alt text](RAG_bode.png)
+
 
 ## Como Usar
 Exemplo de uso para a pergunta: "O que fazer em caso de recaída?"
