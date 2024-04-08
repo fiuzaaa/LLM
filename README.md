@@ -29,17 +29,17 @@ O objetivo principal deste projeto é fornecer aos médicos uma ferramenta que p
 O acesso rápido e preciso a informações específicas dentro de protocolos clínicos é crucial para apoiar médicos na tomada de decisões e no fornecimento de cuidados baseados em evidências aos pacientes. Este projeto foca em simplificar o acesso às informações contidas no "Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo" do INCA.
 
 ## Dados
-O projeto utiliza o **protocolo de tratamento do tabagismo disponibilizado pelo INCA**, acessível no seguinte [link](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). Este documento contém diretrizes clínicas detalhadas que servirão como base para o sistema responder às perguntas dos médicos.
+O projeto utiliza o **protocolo de tratamento do tabagismo disponibilizado pelo INCA**, acessível no seguinte [link:INCA](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). Este documento contém diretrizes clínicas detalhadas que servirão como base para o sistema responder às perguntas dos médicos.
 
 ## Como Usar
 Exemplo de uso para a pergunta: "O que fazer em caso de recaída?"
-
-![Screenshot 2024-04-08 at 06.13.44.png](Screenshot 2024-04-08 at 06.13.44.png)
+![alt text](<Screenshot 2024-04-08 at 06.13.44.png>)
 
 Exemplo de uso para a segunda pergunta: "Pacientes com tuberculose"
-![Screenshot 2024-04-08 at 06.12.51.png](Screenshot 2024-04-08 at 06.12.51.png)
+![alt text](<Screenshot 2024-04-08 at 06.12.51.png>)
 
 A resposta da segunda pergunta traz à memória a primeira pergunta para resposta.
 
 ## Autor
 | [<img src="https://avatars.githubusercontent.com/u/62858799?v=4" width=115><br><sub>Raphael Fiuza</sub>](https://github.com/fiuzaaa)
+| :---: | :---: 
