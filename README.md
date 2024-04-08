@@ -41,5 +41,4 @@ Exemplo de uso para a segunda pergunta: "Pacientes com tuberculose"
 A resposta da segunda pergunta traz à memória a primeira pergunta para resposta.
 
 ## Autor
-| [<img src="https://avatars.githubusercontent.com/u/62858799?v=4" width=115><br><sub>Raphael Fiuza</sub>](https://github.com/fiuzaaa)
-| :---: | :---: 
+[<img src="https://avatars.githubusercontent.com/u/62858799?v=4" width=115><br><sub>Raphael Fiuza</sub>](https://github.com/fiuzaaa)
