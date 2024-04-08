@@ -38,7 +38,7 @@ Exemplo de uso para a pergunta: "O que fazer em caso de recaída?"
 Exemplo de uso para a segunda pergunta: "Pacientes com tuberculose"
 ![alt text](<Screenshot 2024-04-08 at 06.12.51.png>)
 
-A resposta da segunda pergunta traz à memória a primeira pergunta para resposta.
+A resposta da segunda pergunta traz à memória da primeira pergunta para resposta.
 
 ## Autor
 [<img src="https://avatars.githubusercontent.com/u/62858799?v=4" width=115><br><sub>Raphael Fiuza</sub>](https://github.com/fiuzaaa)
